@@ -1,0 +1,99 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+/* #board-container {
+	display: flex;
+	width: 80vw;
+	height: 80vh;
+}
+table {
+	border: solid red 1px;
+} */
+
+h1 {
+	font-family: 'Chango', cursive;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.jumbotron {
+	background-color: #060ce9;
+}
+.fa-question-circle {
+	margin-top: 20vh;
+}
+
+body {
+	background-color: #115ff4;
+
+	color: white;
+}
+
+#board-container {
+	justify-self: center;
+	width: 90vw;
+}
+table {
+	background-color: #060ce9;
+
+	font-family: 'Copse', serif;
+	width: 100%;
+}
+th {
+	text-transform: capitalize;
+}
+
+td {
+	border: white solid 1px;
+	vertical-align: bottom;
+	width: 10vw;
+	height: 10vw;
+	font-size: .9rem;
+}
+
+td:first-letter {
+	text-transform: capitalize;
+}
+
+td.hidden {
+	color: goldenrod;
+	transition: 100ms;
+}
+td.hidden:hover {
+	background-color: #115ff4;
+	transition: 100ms;
+}
+td.question {
+	color: white;
+	background-color: #74119c;
+	transition: 100ms;
+}
+td.question:hover {
+	background-color: #8d2ab5;
+	transition: 100ms;
+}
+td.answer {
+	background-color: darkblue;
+	transition: 100ms;
+	animation-name: answered-fade;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes answered-fade {
+	from {
+		color: white;
+	}
+	80% {
+		color: white;
+	}
+	to {
+		color: grey;
+	}
+}
